@@ -59,6 +59,15 @@ middleware, which are relevant for monitoring the API endpoints in your Django a
 - `vendor`: The database engine/vendor (e.g., "postgresql", "mysql", "sqlite") used for the connection.
 - `type`: The type of error or exception encountered during database operations.
 
+# Cache Metrics
+
+| Metric Name                       | Type    | Labels   | Description                                                               |
+|-----------------------------------|---------|----------|---------------------------------------------------------------------------|
+| `django_cache_get_total`          | Counter | *(none)* | Total number of cache `get` operations attempted.                         |
+| `django_cache_get_hits_total`     | Counter | *(none)* | Total number of cache `get` operations that resulted in a cache hit.      |
+| `django_cache_get_misses_total`   | Counter | *(none)* | Total number of cache `get` operations that resulted in a cache miss.     |
+| `django_cache_get_fail_total`     | Counter | *(none)* | Total number of cache `get` operations that failed (e.g., backend error). |
+
 # Django Model Metrics
 
 | Metric Name                  | Type    | Labels  | Description                                                 |

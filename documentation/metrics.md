@@ -70,8 +70,8 @@ middleware, which are relevant for monitoring the API endpoints in your Django a
 
 # Django Model Metrics
 
-| Metric Name                  | Type    | Labels  | Description                                                 |
-|------------------------------|---------|---------|-------------------------------------------------------------|
-| `django_model_inserts_total` | Counter | `model` | Number of insert operations performed by each Django model. |
-| `django_model_updates_total` | Counter | `model` | Number of update operations performed by each Django model. |
-| `django_model_deletes_total` | Counter | `model` | Number of delete operations performed by each Django model. |
+| Metric Name                  | Type    | Labels  | Description                           |
+|------------------------------|---------|---------|---------------------------------------|
+| `django_model_inserts_total` | Counter | `model` | Number of insert operations by model. |
+| `django_model_updates_total` | Counter | `model` | Number of update operations by model. |
+| `django_model_deletes_total` | Counter | `model` | Number of delete operations by model. |
